@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------------------------------------------------------------
-Documentation created By : Abhishek H Shetty <br>
-Created On : 17th July 2017
+<div style='color: lightseagreen'> Documentation created By : Abhishek H Shetty </div>
+<div style='color: lightseagreen'> Created On : 17th July 2017 </div>
 -------------------------------------------------------------------------------------------------------------------------------------
 
 This is a demo to understand React features and implement the same as components.The app has sample implementation of the features
 that React provides implemented in simple code snippets, very easy to understand and to explore further. This code base is primarily
-for beginners in React, gives a high level walk thru of the features of React. 
+for beginners in React, gives a high level walk thru of the features of React.
 -------------------------------------------------------------------------------------------------------------------------------------
 Steps to run this application.
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ Steps to run this application.
   $ npm install
 - Copy the gulp script for handling the minificaiton & css pre-processing  
 - copy the public & src folders into the project folder.
-- Run the below command to bring up the server and get started.
+- Run the below command to bring up the server and get started.<br/>
   $ npm start
 
   -------------------------------------------------------------------------------------------------------------------------------------
