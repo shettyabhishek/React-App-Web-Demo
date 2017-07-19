@@ -31,5 +31,5 @@ Steps to run this application.
   -------------------------------------------------------------------------------------------------------------------------------------
   Package.json
   - Dependencies => gulp, gulp-clean-css, gulp-cssmin, gulp-rename, gulp-sass, node-sass //For sass pre-processing
-  - running server => //The project set up builds the configuration for running the server using
+  - running server => //The project set up builds the configuration for running the server using<br/>
                 $npm start
