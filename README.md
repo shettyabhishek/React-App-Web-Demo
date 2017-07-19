@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------------------------------------------------------------
-<div style='color: lightseagreen'> Documentation created By : Abhishek H Shetty </div>
-<div style='color: lightseagreen'> Created On : 17th July 2017 </div>
+Documentation created By : Abhishek H Shetty <br/>
+Created On : 17th July 2017
 -------------------------------------------------------------------------------------------------------------------------------------
 
 This is a demo to understand React features and implement the same as components.The app has sample implementation of the features
