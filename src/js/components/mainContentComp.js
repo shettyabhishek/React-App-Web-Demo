@@ -46,6 +46,9 @@ class ContentComp extends Component{
                                     <Link to="rctFtrs">React Features</Link>
                                 </li>
                                 <li className={this.state.selectedTabNum === 3? "active":""} onClick={(event) => {this.updateScreen({tabNum:3})}}>
+                                    <Link to="rdxRcts">Redux In React</Link>
+                                </li>
+                                <li className={this.state.selectedTabNum === 4? "active":""} onClick={(event) => {this.updateScreen({tabNum:4})}}>
                                     <Link to="profile">Profile</Link>
                                 </li>
                             </ul>
