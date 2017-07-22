@@ -5,7 +5,7 @@ html,body{
     font-family: Verdana,Helvetica, sans-serif !important;
     font-size: 13px !important;
 }
-
+.spacer{height: 1em;}
 .appMain{background-color: ivory;width: 100%;}
 .navbar.applnHeader,.applnFooter{background: #049fd9;color: #fff;padding: 5px;text-align: center;}
 .navbar.applnHeader{font-size: 22px;}
@@ -25,7 +25,7 @@ html,body{
         }
     }
 }
-.homeContent,.ftrsContent,.prflContent {
+.homeContent,.ftrsContent,.prflContent,.rdxRctContent {
     h1,h2,h3,h4{color: lightseagreen;}
     p{font-size: 14px;margin-bottom: 2px;}
     pre{overflow: hidden;white-space: pre-wrap;
@@ -45,6 +45,26 @@ i.codeView{font-size: 1.2em;color: #e47a1c;cursor: pointer;}
     .stateCheckbox{margin-left: 0.2em;position: relative;top: 2px;}
 }
 .compRefs .allignComp input{margin-right: 0.8em;}
+.rdxRctContent {font-size: 14px;
+    .row{margin-left: 0;margin-right: 0;}
+}
+.todoContainer{font-size: 13px;
+    .todoTitle{padding: 0.3em;margin-bottom: 0.3em;width: 65%;}
+    .todoComponent{background: #ffffff;border: 1px solid #dedede;box-shadow: 2px 2px 2px #dedede;}
+    .addItem{margin-left: 1em;}
+    ul{padding-left: 0; width: 65%;
+        li{background: #eaeaea;color: #888888;list-style: none;padding: 0.5em;
+            .glyphicon-trash,.glyphicon-ok{display: none;padding-left: 0.5em;}
+            &.even{background: #f1f1f1;color: lightseagreen;}
+            &.odd{background: transparent;color: lightseagreen;}
+            &:hover{cursor: pointer;
+                .glyphicon-trash{color: red;display: block;font-size: 1.2em;}
+                .glyphicon-ok{color: green; display: block;font-size: 1.2em;}
+            }
+            .deleteTodo{background: url('../img/deleteRed.png');height: 32px;width: 32px;}
+        }
+    }
+}
 
 /** Modal window implementation **/
 .modalComp{background: #fff;position: fixed;top: 10%;z-index: 9999; min-width: 500px;
