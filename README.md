@@ -6,6 +6,14 @@ Created On : 17th July 2017
 This is a demo to understand React features and implement the same as components.The app has sample implementation of the features
 that React provides implemented in simple code snippets, very easy to understand and to explore further. This code base is primarily
 for beginners in React, gives a high level walk thru of the features of React.
+This has a sample implementation of usage of Redux in React applications. Implemented a Todo sample.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Todo Sample
+-------------------------------------------------------------------------------------------------------------------------------------
+This code rep has an implementation of "Todo" component. Which is buit on basics of
+
+
 -------------------------------------------------------------------------------------------------------------------------------------
 Steps to run this application.
 -------------------------------------------------------------------------------------------------------------------------------------
