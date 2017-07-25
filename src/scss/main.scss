@@ -51,15 +51,22 @@ i.codeView{font-size: 1.2em;color: #e47a1c;cursor: pointer;}
 .todoContainer{font-size: 13px;
     .todoTitle{padding: 0.3em;margin-bottom: 0.3em;width: 65%;}
     .todoComponent{background: #ffffff;border: 1px solid #dedede;box-shadow: 2px 2px 2px #dedede;}
+    .todoContentText{border-left: 1px solid #dedede;min-height: 30em;padding: 1.2em;padding-top: 0;
+        h4{margin-top: 0;text-decoration: underline;}
+        ul{ padding-left: 15px;
+            li{background: none;list-style-type: disc;}
+        }
+    }
     .addItem{margin-left: 1em;}
     ul{padding-left: 0; width: 65%;
         li{background: #eaeaea;color: #888888;list-style: none;padding: 0.5em;
-            .glyphicon-trash,.glyphicon-ok{display: none;padding-left: 0.5em;}
+            .glyphicon-trash,.glyphicon-ok{font-size: 1.2em;display: none;padding-left: 0.5em;}
+            .glyphicon-ok.showSelected{display: block;}
             &.even{background: #f1f1f1;color: lightseagreen;}
             &.odd{background: transparent;color: lightseagreen;}
             &:hover{cursor: pointer;
-                .glyphicon-trash{color: red;display: block;font-size: 1.2em;}
-                .glyphicon-ok{color: green; display: block;font-size: 1.2em;}
+                .glyphicon-trash{color: red;display: block;}
+                .glyphicon-ok{color: green; display: block;}
             }
             .deleteTodo{background: url('../img/deleteRed.png');height: 32px;width: 32px;}
         }
