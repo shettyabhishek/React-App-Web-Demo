@@ -7,15 +7,33 @@
 **/
 
 export default (state = [], action) => {
+    let todoList = state.todos === undefined ? [] : state.todos;
+    var lstIndx = state.lastIndex === undefined ? 0 : state.lastIndex;
+    var index;  
     switch (action.type){
         case 'ADD_ITEM':
-            var todoList = state.todos === undefined ? [] : state.todos;
-            var tempArray = [];
-            if(todoList);
-                tempArray = [...todoList,action.todoItem]
-            return Object.assign({},state,{todos:tempArray})
-        /*case 'RNM_ITEM':
-            Object.assign({},action.todoItem,{name:action.todoItem});  */
+            lstIndx = lstIndx + 1;
+            action.todoItem.todoItemId = (lstIndx===0) ? 0 : lstIndx;
+            action.todoItem.selected = (todoList.length===0) ? true : false;
+            let tempArray = [];
+            tempArray = [...todoList,action.todoItem];
+            return Object.assign({},state,{todos:tempArray,lastIndex: lstIndx});
+        case 'REM_ITEM':
+            lstIndx = state.lastIndex === undefined ? 0 : state.lastIndex;
+            let tempList = todoList.slice();
+            index = tempList.findIndex(x => x.todoItemId===action.todoDelItem.deleteId);
+            tempList.splice(index,1);
+            return Object.assign({},state,{todos:tempList,lastIndex: lstIndx});
+        case 'SEL_ITEM':
+            todoList = state.todos === undefined ? [] : state.todos;
+            lstIndx = state.lastIndex === undefined ? 0 : state.lastIndex;
+            let tmpLst = todoList.slice();
+            tmpLst.map(function(item,i){
+                return item.selected = false;
+            },{});
+            index = tmpLst.findIndex(x => x.todoItemId===action.selectItem.selectId);
+            todoList[index].selected = true;
+            return Object.assign({},state,{todos:tmpLst,lastIndex: lstIndx});
         default:
         return state;
     }
