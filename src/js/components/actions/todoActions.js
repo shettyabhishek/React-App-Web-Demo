@@ -15,3 +15,19 @@ export const addItem = (item) => {
         todoItem: item
     }
 }
+
+/** Deleting item from todo list **/
+export const removeItem = (item) => {
+    return {
+        type: "REM_ITEM",
+        todoDelItem: item
+    }
+}
+
+/** Selecting item from todo list **/
+export const selectItem = (item) => {
+    return {
+        type: "SEL_ITEM",
+        selectItem: item
+    }
+}
